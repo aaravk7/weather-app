@@ -15,7 +15,7 @@
 }
 
 .root {
-  padding: 2rem;
+  padding: 4rem;
   min-height: 100vh;
   color: var(--text);
   background-color: var(--background);
@@ -28,7 +28,6 @@
 }
 
 .container {
-  margin-block: 5rem;
   margin-inline: auto;
   width: 100%;
   max-width: 800px;
