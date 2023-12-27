@@ -17,10 +17,7 @@ function CityDetails({ data }: { data: CurrentWeatherResponse }) {
         </h2>
       </div>
       <img
-        style={{
-          objectFit: "cover",
-          transform: "scale(1.25)",
-        }}
+        className={styles["weather-icon"]}
         src={`https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`}
         alt={`${data.weather[0].main} Icon`}
       />
