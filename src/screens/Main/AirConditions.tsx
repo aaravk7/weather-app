@@ -1,4 +1,4 @@
-import { Droplets, Eye, GaugeCircle, Thermometer } from "lucide-react";
+import { Droplets, GaugeCircle, Thermometer, Wind } from "lucide-react";
 import { CurrentWeatherResponse } from "../../api";
 import Condition from "./Condition";
 import styles from "./Main.module.css";
@@ -27,10 +27,10 @@ function AirConditions({ data }: { data: CurrentWeatherResponse }) {
           {data.main.pressure} hPa
         </Condition>
         <Condition
-          icon={<Eye size={24} color="rgba(239, 239, 243, 0.6)" />}
-          title="Visibility"
+          icon={<Wind size={24} color="rgba(239, 239, 243, 0.6)" />}
+          title="Wind"
         >
-          {data.visibility / 1000} km
+          {data.wind.deg}° {data.wind.speed}m/s
         </Condition>
       </div>
     </div>
