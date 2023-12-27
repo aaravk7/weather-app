@@ -7,7 +7,9 @@ function CityDetails({ data }: { data: CurrentWeatherResponse }) {
     <div className={styles["main"]}>
       <div>
         <div className={styles["main-top"]}>
-          <h3>{data.name}</h3>
+          <h3>
+            {data.name} <sup className="superscript">{data.sys.country}</sup>
+          </h3>
           <p>{startCase(data.weather[0].description)}</p>
         </div>
         <h2>
