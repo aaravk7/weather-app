@@ -1,0 +1,96 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2rem;
+  min-height: 20rem;
+}
+
+.main-top {
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.main h3 {
+  font-weight: 600;
+  font-size: 2.25rem;
+  color: var(--text);
+  opacity: 0.9;
+}
+
+.main p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.main h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.air-conditions {
+  background-color: var(--foreground);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.air-conditions h2 {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+
+.air-conditions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .air-conditions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .main-top {
+    padding-bottom: 1rem;
+  }
+
+  .main h3 {
+    font-size: 2rem;
+  }
+
+  .main p {
+    font-size: 0.8rem;
+  }
+
+  .main h2 {
+    font-size: 3rem;
+  }
+}
+
+.condition {
+  display: flex;
+  gap: 1rem;
+}
+
+.condition h3 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  opacity: 0.9;
+}
+
+.condition p {
+  color: var(--text-light);
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}

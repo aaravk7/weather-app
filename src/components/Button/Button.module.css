@@ -1,0 +1,26 @@
+.button {
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding-inline: 2rem;
+  padding-block: 0.8rem;
+  border-radius: 0.5rem;
+  background-color: var(--primary);
+  color: var(--text);
+  transition: all 0.2s;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: transparent;
+  box-shadow: 0 0 3px var(--primary);
+}
+
+@media screen and (max-width: 600px) {
+  .button {
+    padding-block: 0.7rem;
+    padding-inline: 1rem;
+  }
+}

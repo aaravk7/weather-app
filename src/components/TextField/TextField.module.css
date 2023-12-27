@@ -1,0 +1,26 @@
+.input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0.8rem;
+  background-color: var(--foreground);
+  border-radius: 0.5rem;
+  font-weight: 400;
+  color: var(--text);
+  transition: all 0.2s;
+  font-size: 1rem;
+}
+.input:hover,
+.input:active,
+.input:focus {
+  box-shadow: 0 0 3px var(--primary);
+}
+.input::placeholder {
+  color: var(--text-light);
+}
+
+@media screen and (max-width: 600px) {
+  .input {
+    padding: 0.7rem;
+  }
+}
