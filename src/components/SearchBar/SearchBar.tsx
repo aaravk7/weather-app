@@ -14,6 +14,7 @@ const SearchBar = (props: SearchBarProps) => {
     e.preventDefault();
     if (input.length === 0) return;
     props.onSearch(input);
+    setInput("");
   };
 
   return (
